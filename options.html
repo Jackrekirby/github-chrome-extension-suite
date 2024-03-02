@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub who is in the Branch Chrome Extension</title>
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        padding: 20px;
+        background-color: #f6f8fa;
+        color: #24292e;
+        font-size: larger;
+      }
+      .input {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .input > label {
+        margin-right: 32px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        flex-grow: 1;
+        padding: 10px;
+
+        border: 1px solid #e1e4e8;
+        border-radius: 6px;
+        font-family: "Courier New", monospace;
+        font-size: medium;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #0366d6;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: "Courier New", monospace;
+        font-size: medium;
+      }
+      button:hover {
+        background-color: #005cc5;
+      }
+
+      h1 {
+        font-size: xx-large;
+        font-weight: 300;
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+      }
+      .subh1 {
+        font-size: large;
+        font-weight: 300;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: xx-large;
+        font-weight: 300;
+      }
+
+      .feature {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="checkbox"] {
+        width: 32px;
+        height: 32px;
+        padding: 10px;
+        border: 1px solid #e1e4e8;
+        margin-right: 16px;
+      }
+
+      #save {
+        margin-left: 32px;
+        width: 128px;
+        text-align: center;
+      }
+
+      label {
+        padding: 8px;
+        border-radius: 8px;
+        background-color: rgba(0, 92, 197, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GitHub Suite</h1>
+    <p class="subh1">Chrome Extension Settings</p>
+    <div class="input">
+      <label for="token">GitHub Token</label>
+      <input type="password" id="token" />
+      <button id="save">Save</button>
+    </div>
+
+    <div>
+      <h2>Features</h2>
+      <div class="feature">
+        <input
+          type="checkbox"
+          id="feature-who-is-in-the-branch"
+          name="feature-who-is-in-the-branch"
+        />
+        <label for="feature-who-is-in-the-branch">Who Is In The Branch</label>
+      </div>
+      <div class="feature">
+        <input
+          type="checkbox"
+          id="feature-pull-request-creation"
+          name="feature-pull-request-creation"
+        />
+        <label for="feature-pull-request-creation">Pull Request Creation</label>
+      </div>
+      <div class="feature">
+        <input
+          type="checkbox"
+          id="feature-compare-commits"
+          name="feature-compare-commits"
+        />
+        <label for="feature-compare-commits">Compare Commits</label>
+      </div>
+      <div class="feature">
+        <input
+          type="checkbox"
+          id="feature-files-changed-sidebar-resize"
+          name="feature-files-changed-sidebar-resize"
+        />
+        <label for="feature-files-changed-sidebar-resize"
+          >Files-Changed Sidebar Resize</label
+        >
+      </div>
+
+      <div class="feature">
+        <input
+          type="checkbox"
+          id="feature-pull-request-jira-linking"
+          name="feature-pull-request-jira-linking"
+        />
+        <label for="feature-pull-request-jira-linking"
+          >Pull Request Jira Linking</label
+        >
+        <input type="text" id="atlassian-subdomain" class="storage-sync"
+        placeholder="Atlassian-Subdomain" style="margin-left: 32px"
+      </div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
