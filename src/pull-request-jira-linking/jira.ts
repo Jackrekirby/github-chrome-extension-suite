@@ -2,10 +2,10 @@ import { error } from "./tools";
 
 export let ATLASSIAN_SUBDOMAIN = "";
 
-chrome.storage.sync.get(["ATLASSIAN_SUBDOMAIN"], (r) => {
-  if (!r.ATLASSIAN_SUBDOMAIN) {
-    error("ATLASSIAN_SUBDOMAIN not set");
+chrome.storage.sync.get(["atlassian-subdomain"], (r) => {
+  if (!r["atlassian-subdomain"]) {
+    error("atlassian-subdomain not set");
     return;
   }
-  ATLASSIAN_SUBDOMAIN = r.ATLASSIAN_SUBDOMAIN;
+  ATLASSIAN_SUBDOMAIN = r["atlassian-subdomain"];
 });

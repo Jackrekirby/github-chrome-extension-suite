@@ -1,4 +1,4 @@
-const LOG_PREFIX = "@ghcc"; // "GITHUB COMPARE COMMITS";
+const LOG_PREFIX = "@gprf"; // "GITHUB DEFAULT PULL REQUEST FILTERS";
 
 export function log(...args: any) {
   args = [LOG_PREFIX, ...args];

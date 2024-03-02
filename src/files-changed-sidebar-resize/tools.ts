@@ -1,4 +1,4 @@
-const LOG_PREFIX = "@ghcc"; // "GITHUB COMPARE COMMITS EXTENSION";
+const LOG_PREFIX = "@gcsr"; // "GITHUB CHANGE SIDEBAR RESIZE";
 
 export function log(...args: any) {
   args = [LOG_PREFIX, ...args];

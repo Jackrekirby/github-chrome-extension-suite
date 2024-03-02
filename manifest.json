@@ -14,5 +14,11 @@
   ],
   "icons": {
     "128": "icon128.png"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["jira.svg"],
+      "matches": ["https://github.com/*"]
+    }
+  ]
 }

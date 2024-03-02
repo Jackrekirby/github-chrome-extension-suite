@@ -47,7 +47,7 @@ const addResizer = () => {
 };
 
 export const initialiseFilesChangedSidebarResize = () => {
-  log("initialising 'compare commits'");
+  log("initialising 'files changed sidebar resize'");
 
   const hasUrlChanged = observeValueChange<string | null>(null);
 

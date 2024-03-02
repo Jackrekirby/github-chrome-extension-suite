@@ -1,4 +1,4 @@
-const LOG_PREFIX = "@gpjl"; // "GITHUB PR JIRA LINKING EXTENSION
+const LOG_PREFIX = "@gpjl"; // "GITHUB PR JIRA LINKING
 
 export function log(...args: any) {
   args = [LOG_PREFIX, ...args];

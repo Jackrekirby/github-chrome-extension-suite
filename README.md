@@ -33,6 +33,13 @@ The Jira ticket name(s) are extracted from the pull request title. Expected form
 
 When viewing the diff for a pull request on GitHub there is a sidepanel listing the files changed. If the file names are too long they are truncated with elipses. This feature adds a `+` button at the top right of the sidebar which when clicked toggles the sidepanel between its original size (~300px) and 500px.
 
+### Default Pull Request Filter
+
+When you go to the pull request tab, you can optionally apply filters to the search. This tool allows you to save a default set of filters by setting the url query parameters of the page.
+
+The default that this tool applies is to sort by the most recently updated open pull request.
+`q=is%3Apr+is%3Aopen+sort%3Aupdated-desc`
+
 ## Extension Requirements
 
 This extension needs your API token for Github.

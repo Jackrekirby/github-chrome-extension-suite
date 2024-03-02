@@ -33,12 +33,12 @@ storageElements.forEach((element) => {
   // currently only supports text input elements
   if (element.tagName.toLowerCase() === "input" && element.type === "text") {
     chrome.storage.sync.get([element.id], (r) => {
-      element.value = r[element.id];
+      element.value = r[element.id] || element.value;
     });
 
-    checkbox.addEventListener("change", function () {
+    element.addEventListener("change", function () {
       chrome.storage.sync.set({ [element.id]: element.value }, function () {
-        console.log(`${checkbox.id} set to ${element.value}`);
+        console.log(`${element.id} set to ${element.value}`);
       });
     });
   }
