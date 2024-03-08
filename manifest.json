@@ -6,6 +6,9 @@
   "options_page": "options.html",
   "permissions": ["activeTab", "storage", "tabs"],
   "host_permissions": ["https://github.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],

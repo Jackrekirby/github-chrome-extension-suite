@@ -1,13 +1,5 @@
 const LOG_PREFIX = "@gwib"; // "GITHUB WHO IS IN BRANCH";
 
-// INCOMING ACTIONS
-export const UPDATE_PR_DETAILS_BACKGROUND_ACTION =
-  "UPDATE_PR_DETAILS_BACKGROUND_ACTION";
-
-// OUTGOING ACTIONS
-export const UPDATE_PR_DETAILS_CONTENT_ACTION =
-  "UPDATE_PR_DETAILS_CONTENT_ACTION";
-
 export function log(...args: any) {
   args = [LOG_PREFIX, ...args];
   console.log.apply(console, args);
