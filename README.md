@@ -12,6 +12,16 @@ Green = No one in branch
 Purple = You are in the branch
 Red = Someone else is in the branch
 
+### Warn of Skipped Branches
+
+Displays whether or not the branch transition in a pull request is a recognised one. Aims to prevent one accidentally merging straight from feature to production.
+
+Recognised transitions:
+
+1. Feature to Development
+2. Development to Staging
+3. Staging to Production
+
 ### Pull Request Creation
 
 Adds two buttons in the sidebar of a GitHub pull request.
