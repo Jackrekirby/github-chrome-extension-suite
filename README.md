@@ -61,9 +61,10 @@ This extension needs your API token for Github.
 
 ## User Installation
 
-1. Go to `chrome://extensions/`
-2. Select `load unpacked`
-3. Navigate to the project directory
+1. Download the latest release
+2. Go to `chrome://extensions/`
+3. Select `load unpacked`
+4. Pick the downloaded release
 
 ## Dev Installation
 
