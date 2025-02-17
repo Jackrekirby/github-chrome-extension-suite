@@ -67,6 +67,8 @@ This extension needs your API token for Github.
 
 ## Dev Installation
 
+Built with node 16
+
 `npm i`
 
 `npx webpack --watch`

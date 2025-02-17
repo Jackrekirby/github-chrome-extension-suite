@@ -4,15 +4,25 @@
   "description": "A suite of tools to enhance your Github experience",
   "version": "1.0",
   "options_page": "options.html",
-  "permissions": ["activeTab", "storage", "tabs"],
-  "host_permissions": ["https://github.com/*"],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
-      "js": ["dist/bundle.js"]
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "bundle.js"
+      ]
     }
   ],
   "icons": {
@@ -20,8 +30,12 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["jira.svg"],
-      "matches": ["https://github.com/*"]
+      "resources": [
+        "jira.svg"
+      ],
+      "matches": [
+        "https://github.com/*"
+      ]
     }
   ]
 }
